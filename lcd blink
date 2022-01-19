@@ -1,0 +1,17 @@
+
+#include <LiquidCrystal.h>
+
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+
+void setup() {
+  lcd.begin(16, 2);           // set up the LCD 16x2
+  lcd.print("hello, world!"); // print a message to the LCD
+}
+
+void loop() {
+  lcd.noBlink();
+  delay(3000); // turn off the blinking cursor:
+  lcd.blink(); // turn on the blinking cursor
+  delay(3000);
+}
+ 
